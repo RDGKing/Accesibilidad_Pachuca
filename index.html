@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Accesibilidad Peatonal - IT Pachuca</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Hoja de estilos personalizada -->
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Barra de navegación -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/tecnm.png" alt="Logo IT Pachuca" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#objetivos">Objetivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#metodologia">Metodología</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mapa">Mapa Interactivo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Imagen principal -->
+    <div class="hero-image">
+        <img src="img/firstLogo.PNG" alt="mapa movilidad" class="img-fluid w-100 img-hover-effect" style="height: auto; max-height: 600px; object-fit: cover;">
+    </div>
+
+    <!-- Sección Introducción -->
+    <section class="container my-5 py-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="img/walkavility.png" alt="Accesibilidad peatonal" class="img-fluid rounded img-hover-effect mb-3" style="max-height: 400px;">
+            </div>
+            <div class="col-md-6">
+                <p class="lead">La accesibilidad peatonal es un tema que está ganando importancia en la planificación urbana y el desarrollo de 
+                    comunidades sostenibles, esto como respuesta a la demanda pública. Busca reducir la contaminación del aire y las emisiones de carbono, 
+                    la presión exhaustiva del tráfico en centros urbanos y una creciente conciencia ambiental por parte de los ciudadanos. Además, estudios 
+                    de salud examinan que la actividad física como caminar, son medidas que faciliten la rehabilitación y mitigan enfermedades crónicas modernas 
+                    como la obesidad, la diabetes, la hipertensión, la depresión (Baobeid, A. et al., 2021).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Objetivos -->
+    <section id="objetivos" class="container my-5 py-5 bg-light">
+        <h2 class="text-center mb-5">Objetivos</h2>
+        
+        <div id="objetivosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Objetivo General -->
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3 class="text-primary">Generales</h3>
+                            <p>Desarrollar una propuesta que nos permita aplicar métodos de análisis geoespacial, utilizando sistemas de información geográfica (GIS), para evaluar la calidad y accesibilidad peatonal existente en diversas áreas urbanas cercanas al Instituto Tecnológico de Pachuca.</p>
+                        </div>
+                        <!-- Modificar el div de la imagen en Objetivos Específicos -->
+                        <div class="col-md-6 text-center mt-4 mt-md-0">
+                            <img src="img/gis_app.jpg" alt="Objetivos específicos" class="img-fluid rounded img-hover-effect" style="max-height: 300px;">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Objetivos Específicos -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3 class="text-primary">Específicos</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Definir y seleccionar los aspectos que influyen en la evaluación de la accesibilidad peatonal.</li>
+                                <li class="list-group-item">Integrar y normalizar datos geoespaciales de fuentes fiables.</li>
+                                <li class="list-group-item">Desarrollar metodología para evaluar accesibilidad peatonal.</li>
+                                <li class="list-group-item">Realizar análisis detallado considerando variables urbanas y sociales.</li>
+                                <li class="list-group-item">Diseñar un Sistema de Información Geoespacial (GIS) para visualización.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6"">
+                            <img src="img/gis.png" alt="Objetivos específicos" style="width: 300px; height: 300px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#objetivosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#objetivosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección Metodología -->
+    <section id="metodologia" class="container my-5 py-5">
+        <h2 class="text-center mb-5">Recolección de Datos</h2>
+        
+        <div class="row mb-4">
+            <!-- Infraestructura Vial -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="text-center py-3">
+                        <img src="img/infVial.jpg" alt="Infraestructura vial" class="img-fluid img-hover-effect" style="max-height: 150px;">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-primary">Infraestructura Vial</h4>
+                        <ul>
+                            <li>Vialidades peatonales</li>
+                            <li>Semáforos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Espacios de Abasto y Comercio -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="text-center py-3">
+                        <img src="img/convini.png" alt="Espacios de comercio" class="img-fluid img-hover-effect" style="max-height: 150px;">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-primary">Espacios de Abasto y Comercio</h4>
+                        <ul>
+                            <li>Tiendas de conveniencia</li>
+                            <li>Plazas y mercados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Equipamiento Urbano -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="text-center py-3">
+                        <img src="img/urbuanismo.png" alt="Equipamiento urbano" class="img-fluid img-hover-effect" style="max-height: 150px;">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-primary">Equipamiento Urbano</h4>
+                        <ul>
+                            <li>Parques</li>
+                            <li>Centros deportivos</li>
+                            <li>Hospitales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="my-4 p-4 bg-light rounded">
+            <p class="fw-bold">Ponderación de categorías:</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Infraestructura Vial
+                    <span class="badge bg-primary rounded-pill">40%</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Espacios de Abasto y Comercio
+                    <span class="badge bg-primary rounded-pill">15%</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Equipamiento Urbano
+                    <span class="badge bg-primary rounded-pill">15%</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Cercanía a la escuela
+                    <span class="badge bg-primary rounded-pill">30%</span>
+                </li>
+            </ul>
+        </div>
+        
+        <h3 class="text-center my-5 text-primary">Procesamiento de Datos</h3>
+        <div class="list-group mb-5">
+            <div class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Georreferenciación</h5>
+                </div>
+                <p class="mb-1">Se georreferenciaron todos los datos para obtener coordenadas exactas y se depuró la información, filtrando solo los datos más seguros y relevantes.</p>
+            </div>
+            <div class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Isocrona</h5>
+                </div>
+                <p class="mb-1">Se generó una isocrona de 2 km, lo que define el área de estudio para evaluar cuán accesibles son las zonas dentro de las diferentes distancias a la escuela.</p>
+            </div>
+            <div class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Análisis espacial</h5>
+                </div>
+                <p class="mb-1">Se calculó la densidad de cada elemento utilizando una estimación de kernel, y los resultados se combinaron posteriormente a través de un Raster overlay.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Mapa -->
+    <section id="mapa" class="container my-5 py-5 bg-light">
+        <h2 class="text-center mb-5">El Mapa</h2>
+        
+        <div class="text-center mb-5" style="height: 700px;">
+            <iframe src="mapa.html" title="Iframe Example" style="width: 100%; height: 100%;"></iframe>
+        </div>
+        
+        <div id="mapaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Puntaje de Accesibilidad -->
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3 class="text-primary">Puntaje de Accesibilidad</h3>
+                            <p>Un puntaje visual de 0 a 100, donde 100 indica la mejor accesibilidad. El puntaje se representa con colores para facilitar su interpretación.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/rating.png" alt="Puntaje de accesibilidad" class="img-fluid rounded img-hover-effect">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vialidades -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="img/vialidad.jpg" alt="Vialidades" class="img-fluid rounded img-hover-effect">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-primary">Vialidades</h3>
+                            <p>Las vialidades principales se visualizan en el mapa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ruta -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3 class="text-primary">Ruta</h3>
+                            <p>Se genera una ruta en base a las vialidades disponibles evaluando la ruta más rápida.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/rutas.jpg" alt="Ruta" class="img-fluid rounded img-hover-effect" style="width: 300px; height: 300px;">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactividad -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="img/inter.jpg" alt="Interactividad" class="img-fluid rounded img-hover-effect">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-primary">Interactividad</h3>
+                            <p>Los usuarios pueden explorar el mapa y superponer los datos con imágenes satelitales de ESRI, lo que les permite obtener información detallada y contextualizada en tiempo real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#mapaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mapaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección Equipo -->
+    <section id="equipo" class="container my-5 py-5">
+        <h2 class="text-center mb-5">Nuestro Equipo</h2>
+        
+        <div class="row">
+            <!-- Integrante 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-start border-4 border-success">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="card-title text-primary">Barrios Yañez Angel Rodrigo</h4>
+                                <p class="text-muted">Analista</p>
+                            </div>
+                            <div class="col-4 text-end">
+                                <img src="img/icon 1.jpg" alt="Integrante 1" class="img-fluid rounded-circle img-hover-effect" style="width: 80px; height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Integrante 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-start border-4 border-success">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="card-title text-primary">Ochoa Gonzalez Jonathan Emir</h4>
+                                <p class="text-muted">Desarrollador Web</p>
+                            </div>
+                            <div class="col-4 text-end">
+                                <img src="img/icon 2.jpg" alt="Integrante 2" class="img-fluid rounded-circle img-hover-effect" style="width: 80px; height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Integrante 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-start border-4 border-success">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="card-title text-primary">Varela Mejía Lizet Guadalupe</h4>
+                                <p class="text-muted">Investigador</p>
+                            </div>
+                            <div class="col-4 text-end">
+                                <img src="img/icon 3.jpg" alt="Integrante 3" class="img-fluid rounded-circle img-hover-effect" style="width: 80px; height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Proyecto de Accesibilidad Peatonal - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="javascript/script.js"></script>
+</body>
+</html>
